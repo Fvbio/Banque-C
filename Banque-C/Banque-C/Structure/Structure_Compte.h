@@ -9,19 +9,24 @@
 #define Structure_Compte_h
 
 #include <stdio.h>
+
 // ==============================================================
 
 typedef struct Compte Compte;
 
+
 // Structure d'un compte
 struct Compte {
     int numero;
-    char nom[50]; // Tableau de caractères pour stocker le nom
+    char nom[50];
     int solde;
+    int nombreDeTransactions; // Compteur du nombre de transactions dans l'historique
 };
+
+
 
 // Prototypes de fonctions associées aux comptes
 void constructCompte(Compte *compte, int numero, const char *nom, int solde);
-
+void setSolde(int solde);
 // ==============================================================
 #endif /* Structure_Compte_h */

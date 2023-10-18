@@ -14,10 +14,16 @@
 
 // ==============================================================
 
+void setSoldes(int, int);
+int getSolde(void);
 void comptesInit(void);
 int verificationCompte(int);
+int verificationVirement(int);
 void soldeCompte(void);
 void afficherCompte(int);
+void virementCompte(void);
+void ajouteSoldeCompte(int);
+void retraitSoldeCompte(void);
 
 // ==============================================================
 #endif /* Comptes */

@@ -18,8 +18,9 @@
         printf("\n");
         Menu();
         
-        
-        
+        setSoldes(1, 50);
+
+
 
         return 0;
     }

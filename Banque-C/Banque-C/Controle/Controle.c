@@ -12,7 +12,6 @@
 
 // ==============================================================
 int etat = 0; // permet d'afficher Menu si numero de compte Validé
-int numero; 
 
 void Start(void){
     
@@ -44,12 +43,11 @@ void Menu(void){
         enum MenuCompte {
             Solde = 1,
             Virement,
-            Historique,
             Quitter
         };
         
         //Choix menu
-        printf("Solde[1]  Virement[2]  Historique[3]  Quitter[4]\n");
+        printf("Solde[1]  Virement[2]  Quitter[3]\n");
         
         //User choix
         int MenuChoix;
@@ -58,15 +56,11 @@ void Menu(void){
         
         switch (MenuChoix) {
             case Solde:
-                soldeCompte();
+                getSolde();
                 break;
                 
             case Virement:
-                printf("INDISPONIBLE POUR LE MOMENT\n");
-                break;
-                
-            case Historique:
-                printf("INDISPONIBLE POUR LE MOMENT\n");
+                printf("En developpement! \n\n ");
                 break;
                 
             case Quitter:

@@ -18,5 +18,6 @@ void constructCompte(Compte *compte, int numero, const char *nom, int solde) {
     compte->solde = solde;
 }
 
+
 // ==============================================================
 #endif /* account_init_h */
